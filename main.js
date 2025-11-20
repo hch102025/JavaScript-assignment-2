@@ -189,14 +189,13 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 // Skriv koden for oppgave 6 her
 
 // Removes the first index of the array ("Bok")
-// Replaces index 2 in ItemArray (Viskelær) with newItem ("Linjal")
+// Removes index 2, replaces the element with "Linjal".
 // Removes index 0 and 1 (Stops before 2) using splice.
 // Adds "Markeringspenn" to the start of the array where the two previous items were.
 // Returns itemArray with the join method. Joins the array into a string using | to seperate them.
 function schoolBag(itemArray) {
   itemArray.shift();
-  newItem = "Linjal";
-  itemArray[2] = newItem;
+  itemArray.splice(2, 1, "Linjal");
   itemArray.splice(0, 2);
   itemArray.unshift("Markeringspenn");
   return itemArray.join(" | ");
