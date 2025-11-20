@@ -24,14 +24,14 @@ funksjonen)
 // Skriv koden for oppgave 1 her
 
 // Checks if the number value can be divided by two with 0 remainders.
-function returnNumber(number) {
+function oddOrEven(number) {
   if (number % 2 === 0) {
     return "Partall";
   } else {
     return "Oddetall";
   }
 }
-console.log(returnNumber(2));
+console.log(oddOrEven(2));
 
 /******************************************************************************
 2.
