@@ -196,8 +196,7 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 function schoolBag(itemArray) {
   itemArray.shift();
   itemArray.splice(2, 1, "Linjal");
-  itemArray.splice(0, 2);
-  itemArray.unshift("Markeringspenn");
+  itemArray.splice(1, 2, "Markeringspenn");
   return itemArray.join(" | ");
 }
 console.log(schoolBag(items));
